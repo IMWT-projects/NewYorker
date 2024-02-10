@@ -1,2 +1,5 @@
 # hands_on
-Lucrezia Pograri, DhDk 2023/2024, Information Modelling and Web Technologies, Fabio Vitali, UNIBO
+New Yorker exercise
+
+See the web page at the following link:
+https://imwt-projects.github.io/NewYorker/
