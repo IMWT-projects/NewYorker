@@ -39,6 +39,26 @@
     <input type="password" id="reg_password" name="reg_password" required><br><br>
     <input type="submit" value="Register">
   </form>
+  
+  <!-- Vacation Form-->
+  <form action="booking.php" method="post">
+    <h2>Book a vacation</h2>
+    <label for="destination">Choose destination: <select name="desination">
+        <option value="">-- select one --</option>
+        <option value="Mars">Mars</option>
+    </select></label><br>
+
+    <label for="username"><i>Name:</i> <input type="text" name="name"></label>
+    <label for="username"><i>Surname:</i> <input type="text" name="surname"></label><br>
+        <label for="date">Select arriving date:</label><br>
+        <input type="date" id="arriving_date" name="arriving_date">
+        <label for="date">Select departing date:</label><br>
+        <input type="date" id="departing_date" name="departing_date"><br>
+
+    <label for="address">Address:</label><br>
+    <input type="address" id="reg_address" name="reg_address" required><br><br>
+    <input type="submit" value="Book your vacation">
+  </form>
 </div>
 
 </body>
