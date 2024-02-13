@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Html Forms</title>
+<style>
+  /* Style to display the forms side by side */
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <!-- Login Form -->
+  <form action="login.php" method="post">
+    <h2>Login</h2>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="submit" value="OK">
+    <input type="button" value="Cancel">
+  </form>
+
+  <!-- Registration Form -->
+  <form action="register.php" method="post">
+    <h2>Registration</h2>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="reg_username">Username:</label><br>
+    <input type="text" id="reg_username" name="reg_username" required><br>
+    <label for="reg_password">Password:</label><br>
+    <input type="password" id="reg_password" name="reg_password" required><br><br>
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+</body>
+</html>
