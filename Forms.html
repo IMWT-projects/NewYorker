@@ -27,17 +27,24 @@
   </form>
 
   <!-- Registration Form -->
-  <form action="register.php" method="post">
+  <form action="register.php" method="get" action="http://www.site.com/serverside.py">
     <h2>Registration</h2>
-    <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fullname" name="fullname" required><br>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="middle">Middle initial:</label><br>
+    <input type="text" id="middle" name="middle" required><br>
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname" required><br>
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" required><br>
-    <label for="reg_username">Username:</label><br>
-    <input type="text" id="reg_username" name="reg_username" required><br>
-    <label for="reg_password">Password:</label><br>
-    <input type="password" id="reg_password" name="reg_password" required><br><br>
-    <input type="submit" value="Register">
+    <p>Gender:
+        <label><input type="radio" name="gender" value="m" checked>Male</label>
+        <label><input type="radio" name="gender" value="f">Female</label>
+        <label><input type="radio" name="gender" value="x">Prefer not to say</label>
+    </p>
+    <label for="personal_description">Personal description:</label><br>
+    <input type="textarea" id="textarea" name="textarea" required><br>
+    <input type="submit" value="Submit">
   </form>
   
   <!-- Vacation Form-->
