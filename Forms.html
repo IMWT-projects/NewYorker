@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Html Forms</title>
+<title>HTML Forms</title>
 <style>
   /* Style to display the forms side by side */
   .form-container {
@@ -37,33 +37,42 @@
     <input type="text" id="surname" name="surname" required><br>
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" required><br>
-    <p>Gender:
-        <label><input type="radio" name="gender" value="m" checked>Male</label>
-        <label><input type="radio" name="gender" value="f">Female</label>
+    <p>Gender:<br>
+        <label><input type="radio" name="gender" value="m">Male</label>
+        <label><input type="radio" name="gender" value="f" checked>Female</label>
         <label><input type="radio" name="gender" value="x">Prefer not to say</label>
     </p>
     <label for="personal_description">Personal description:</label><br>
-    <input type="textarea" id="textarea" name="textarea" required><br>
+    <textarea id="personal_description" name="personal_description" required></textarea><br>
     <input type="submit" value="Submit">
   </form>
   
   <!-- Vacation Form-->
   <form action="booking.php" method="post">
     <h2>Book a vacation</h2>
-    <label for="destination">Choose destination: <select name="desination">
+    <label for="destination">Choose destination:</label><br>
+    <select name="destination">
         <option value="">-- select one --</option>
+        <option value="Mars">Mercury</option>
+        <option value="Mars">Venus</option>
         <option value="Mars">Mars</option>
-    </select></label><br>
+        <option value="Mars">Jupiter</option>
+        <option value="Mars">Saturn</option>
+        <option value="Mars">Uranus</option>
+        <option value="Mars">Neptune</option>
+        <option value="Mars">Another galaxy</option>
+    </select><br>
 
-    <label for="username"><i>Name:</i> <input type="text" name="name"></label>
-    <label for="username"><i>Surname:</i> <input type="text" name="surname"></label><br>
-        <label for="date">Select arriving date:</label><br>
-        <input type="date" id="arriving_date" name="arriving_date">
-        <label for="date">Select departing date:</label><br>
-        <input type="date" id="departing_date" name="departing_date"><br>
-
+    <p><label for="name"><i>Name:</i></label><br>
+    <input type="text" id="name" name="name"><br></p>
+    <label for="surname"><i>Surname:</i></label><br>
+    <input type="text" id="surname" name="surname"><br>
+    <p><label for="arriving_date">Select arriving date:</label><br>
+    <input type="date" id="arriving_date" name="arriving_date"><br>
+    <label for="departing_date">Select departing date:</label><br>
+    <input type="date" id="departing_date" name="departing_date"><br></p>
     <label for="address">Address:</label><br>
-    <input type="address" id="reg_address" name="reg_address" required><br><br>
+    <input type="address" id="address" name="address" required><br><br>
     <input type="submit" value="Book your vacation">
   </form>
 </div>
