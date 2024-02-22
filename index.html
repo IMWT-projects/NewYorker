@@ -1,77 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="index">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-Tech Projects</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J84V7RF4QV"></script>
-    <script> <!--Google Analytics-->
+    
+    <!--Google Analytics-->
+    <script> 
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-J84V7RF4QV');
     </script>
-   <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1bdbbb;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .project {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .project h2 {
-            margin-top: 0;
-        }
-        .project p {
-            margin-top: 10px;
-        }
-        footer {
-            background-color: #1bdbbb;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style> -->
+
 </head>
-<body>
-    <header>
+<body class="index">
+    <header class="index">
         <h1><a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2023/454464" target="_blank" style="text-decoration: none; color: inherit;">Web Tech Projects</a></h1>
     </header>
+
+
     <div class="container">
-        <div class="project">
-            <h2><a href="NewYorker.html" target="_blank">New Yorker</a></h2>
-            <p>Exercise: mark into html a journal article from a pdf file</p>
+        
+        <div class="project dropdown">
+            <!-- Arricles section -->
+            <h2><a>Articles</a></h2>
+            <!-- Dropdown content -->
+            <div class="dropdown-content">
+                <!-- Dropdown links -->
+                <a href="NewYorker.html" target="_blank">New Yorker</a>
+                <a href="TexasMonthly.html" target="_blank">Texas Monthly</a>
+                <a href="SundayReading.html" target="_blank">Sunday Reading</a>
+            </div>
+            <!-- End of dropdown content -->
+            <p>Exercise: mark some journal articles into html from pdf.</p>
         </div>
+
+            <!-- Forms section -->
         <div class="project">
             <h2><a href="Forms.html" target="_blank">Forms</a></h2>
-            <p>Exercise: create three different html forms</p>
+            <p>Exercise: create three different html forms.</p>
         </div>
     </div>
-    <footer>
+
+
+    <footer class="index">
         <p><a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank" style="text-decoration: none; color: inherit;"><b>DhDk, Unibo</b></a><br>
             &copy; 2024 Lucrezia Pograri<br>
             E-mail: lucrezia.pograri@studio.unibo.it</p>

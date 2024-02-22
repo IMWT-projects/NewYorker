@@ -1,93 +1,163 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+body.index {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
 }
-header {
-    background-color: #1bdbbb;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+header.index {
+	background-color: #1bdbbb;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
 }
-h1 {
-    margin: 0;
+h1.index {
+	margin: 0;
 }
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 0 20px;
 }
 .project {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
 }
 .project h2 {
-    margin-top: 0;
+	margin-top: 0;
 }
 .project p {
-    margin-top: 10px;
+	margin-top: 10px;
 }
-footer {
-    background-color: #1bdbbb;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.project a {
+	color: black;
+	text-decoration: underline;
+}
+footer.index {
+	background-color: #1bdbbb;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+		
+		/* Dropdown container */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 
+/* STYLE FOR ARTICLES */
 
-/* Trigger.html cascading style sheets
-
-body {
-	font-family: "Chronicle Display", serif;
-	font-size: 22px;
-	line-height: 1.5em;
-	margin: 0 auto;
+body.articles {
+	font-family:"Caslon Pro", serif;
+	font-size: 1.65em;
+	font-weight: 400;
+	line-height: 1.75em;
+	margin: 7% auto;
 	padding: 10px 20px 10px 20px;
-	max-width: 750px;
+	max-width: 900px;
 }
 
-footer {
-	margin-top: 3em;
-	margin-bottom: 5em;
+.dropcap::first-letter {
+	float: left;
+    font-size: 3.1em;
+    margin-bottom: -0.2em;
+    padding:0.45em 0.06em 0 0;
 }
 
-h1 {
+/* ny-logo*/
+#ny-logo{
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    scale: 170%;
+}
+
+
+/* New Yorker article*/
+
+/* IMPORTED FONTS */
+
+@font-face {
+    font-family: "Irvin Heading";
+    font-weight: 400;
+    src: url("fonts/Irvin-Heading.woff2") format("woff2");
+    }
+
+@font-face {
+    font-family: "Caslon Pro";
+    font-weight: 400;
+    src: url("fonts/Caslon-Pro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Caslon Pro";
+    font-weight: 400;
+    font-style: italic;
+    src: url("fonts/Caslon-Pro-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Graphik Medium";
+    font-weight: 500;
+    src: url("fonts/Graphik-Medium.woff2") format("woff2");
+}
+
+/* Texas Monthly article (Trigger)*/
+
+#Texas-title-logo{
+	display: block;
+	width: 30%;
+	margin-bottom: 2em;
+	margin-right: auto;
+}
+
+#txs{
 	font-family: "Chronicle Display", serif;
 	font-size: 47px;
 	font-weight: 600;
 	line-height: 1.25em;
 }
 
-h2 {
-	font-family: "Titillium Web", sans-serif;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 1em;
-	margin-top: 2em;
-}
-
-h3 {
-	font-family: "Titillium Web", sans-serif;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 1em;
-}
-
-h1 + * {
-	font-family: Verdana, sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 1.5em;
-	margin-bottom: 2.5em;
-}
 
 .uppercase {
 	font-family: "Titillium Web", sans-serif;
@@ -97,75 +167,7 @@ h1 + * {
 	text-transform: uppercase;
 }
 
-img:not(.logo) + p {
-	font-family: "Titillium Web", sans-serif;
-	font-size: 18px;
-	font-weight: 700;
-	line-height:1.5em;
-	margin-top: -0.1em;
-	margin-bottom: 3em;
-}
-
-.has-dropcap::first-letter {
-	font-family: "Chronicle Display Condensed";
-	float: left;
-    font-size: 90px;
-    line-height: 1em;
-    font-weight: normal;
-    margin-bottom:-0.2em;
-    padding:0.35em 0.2em 0.3em 0;
-}
-
-footer p {
-	margin-bottom: 4em;
-}
-
-a {
-	color: black;
-	text-decoration-thickness: 2px;
-}
-
-a[href*="dictionary"], a[href*="philosophy"] {
-	text-decoration: none;
-	font-weight: 600;
-	color: darkblue;
-}
-
-a[href*="wikipedia"] {
-	color: rgba(219, 51, 52, 1);
-}
-
-a[href*="booking"] {
-	text-decoration: none;
-	color: green;
-}
-
-q, footer cite {
-	quotes: "“" "”" "‘" "’";
-	font-style: normal;
-}
-
-q::before, footer cite::before {
-	content: open-quote;
-}
-
-q::after, footer cite::after {
-	content: close-quote;
-}
-
-img {
-	max-width: 100%;
-	margin-top: 2em;
-}
-
-.logo{
-	display: block;
-	width: 25%;
-	margin-bottom: 2.5em;
-	margin-right: auto;
-}
-
-table {
+table#tableTrigger {
 	width: 100%;
 	text-align: left;
 	margin-bottom: 1.5em;
@@ -181,16 +183,7 @@ th {
 	border-top: 8px solid;
 }
 
-hr {
-	border: 0;
-	background:rgba(229,229,229,1);
-	height: 1.5px;
-}
-
-footer hr:nth-child(4n+3) {
-	height: 8px;
-	background: black;
-}
+/* IMPORTED FONTS */
 
 @font-face {
     font-family: "Titillium Web";
@@ -242,5 +235,3 @@ footer hr:nth-child(4n+3) {
     font-weight: 400;
     src: url("fonts/ChronicleDispCond-Roman.otf") format("opentype");
 }
-
-/* end of Trigger */
