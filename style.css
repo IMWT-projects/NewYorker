@@ -40,3 +40,207 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+
+
+/* Trigger.html cascading style sheets
+
+body {
+	font-family: "Chronicle Display", serif;
+	font-size: 22px;
+	line-height: 1.5em;
+	margin: 0 auto;
+	padding: 10px 20px 10px 20px;
+	max-width: 750px;
+}
+
+footer {
+	margin-top: 3em;
+	margin-bottom: 5em;
+}
+
+h1 {
+	font-family: "Chronicle Display", serif;
+	font-size: 47px;
+	font-weight: 600;
+	line-height: 1.25em;
+}
+
+h2 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1em;
+	margin-top: 2em;
+}
+
+h3 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1em;
+}
+
+h1 + * {
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin-bottom: 2.5em;
+}
+
+.uppercase {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 16.5px;
+	font-weight:700;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+img:not(.logo) + p {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height:1.5em;
+	margin-top: -0.1em;
+	margin-bottom: 3em;
+}
+
+.has-dropcap::first-letter {
+	font-family: "Chronicle Display Condensed";
+	float: left;
+    font-size: 90px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom:-0.2em;
+    padding:0.35em 0.2em 0.3em 0;
+}
+
+footer p {
+	margin-bottom: 4em;
+}
+
+a {
+	color: black;
+	text-decoration-thickness: 2px;
+}
+
+a[href*="dictionary"], a[href*="philosophy"] {
+	text-decoration: none;
+	font-weight: 600;
+	color: darkblue;
+}
+
+a[href*="wikipedia"] {
+	color: rgba(219, 51, 52, 1);
+}
+
+a[href*="booking"] {
+	text-decoration: none;
+	color: green;
+}
+
+q, footer cite {
+	quotes: "“" "”" "‘" "’";
+	font-style: normal;
+}
+
+q::before, footer cite::before {
+	content: open-quote;
+}
+
+q::after, footer cite::after {
+	content: close-quote;
+}
+
+img {
+	max-width: 100%;
+	margin-top: 2em;
+}
+
+.logo{
+	display: block;
+	width: 25%;
+	margin-bottom: 2.5em;
+	margin-right: auto;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 1.5em;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 1.4em 0 1.4em 0;
+	border-bottom: 1.5px solid rgba(229,229,229,1);
+}
+
+th {
+	border-top: 8px solid;
+}
+
+hr {
+	border: 0;
+	background:rgba(229,229,229,1);
+	height: 1.5px;
+}
+
+footer hr:nth-child(4n+3) {
+	height: 8px;
+	background: black;
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    font-weight: 700;
+    src: url("fonts/TitilliumWeb-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    font-weight: 400;
+    src: url("fonts/ChronicleDisp-Roman.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    font-weight: 400;
+    font-style: italic;
+    src: url("fonts/ChronicleDisp-Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    font-weight: 600;
+    src: url("fonts/ChronicleDisp-Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    font-weight: 600;
+    font-style: italic;
+    src: url("fonts/ChronicleDisp-SemiboldItal.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    font-weight: 700;
+    src: url("fonts/ChronicleDisp-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chronicle Display";
+    font-weight: 700;
+    font-style: italic;
+    src: url("fonts/ChronicleDisp-BoldItal.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Chronicle Display Condensed";
+    font-weight: 400;
+    src: url("fonts/ChronicleDispCond-Roman.otf") format("opentype");
+}
+
+/* end of Trigger */
