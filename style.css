@@ -1,3 +1,5 @@
+
+
 body.index {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -46,7 +48,7 @@ footer.index {
 }
 
 		
-		/* Dropdown container */
+		/* Dropdown container, Index page */
 .dropdown {
 	position: relative;
 	display: inline-block;
@@ -97,6 +99,7 @@ body.articles {
 	max-width: 900px;
 }
 
+
 .dropcap::first-letter {
 	float: left;
     font-size: 3.1em;
@@ -104,12 +107,24 @@ body.articles {
     padding:0.45em 0.06em 0 0;
 }
 
-/* ny-logo*/
+/* ny-logo
 #ny-logo{
 	text-align: center;
 	display: block;
     margin: 0 auto;
     scale: 170%;
+} */
+
+#icon{
+	text-align: center;
+	display: block;
+    margin: 0 auto;
+    width: 35%;
+}
+
+img.big {
+	width: 90%;
+	height: auto;
 }
 
 
@@ -179,9 +194,6 @@ th, td {
 	border-bottom: 1.5px solid rgba(229,229,229,1);
 }
 
-th {
-	border-top: 8px solid;
-}
 
 /* IMPORTED FONTS */
 
