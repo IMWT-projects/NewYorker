@@ -87,6 +87,19 @@ footer.index {
 }
 
 
+  /* Style to display the FORMS side by side */
+.form-container {
+    display:inline-flex;
+    justify-content:center;
+  }
+
+html#forms {
+	height: 100%; 
+	background: linear-gradient(to bottom, #df5d5d, #3b32b6); 
+  }
+  
+
+
 /* STYLE FOR ARTICLES */
 
 body.articles {
