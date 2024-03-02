@@ -1,17 +1,21 @@
-
-
 body.index {
-	font-family: Arial, sans-serif;
+	font-family: "Irvin Heading";
 	margin: 0;
 	padding: 0;
 	background-color: #f4f4f4;
 }
+
+
 header.index {
+	font-family: "M PLUS Code Latin", monospace;
+	font-size: 3vh;
 	background-color: #1bdbbb;
 	color: #fff;
 	padding: 20px 0;
 	text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap') /* Font for the title Web Tech Projects*/
+
 h1.index {
 	margin: 0;
 }
@@ -42,7 +46,7 @@ footer.index {
 	color: #fff;
 	text-align: center;
 	padding: 20px 0;
-	position: fixed;
+	position:relative ;
 	width: 100%;
 	bottom: 0;
 }
@@ -260,3 +264,6 @@ th, td {
     font-weight: 400;
     src: url("fonts/ChronicleDispCond-Roman.otf") format("opentype");
 }
+
+
+/* Style for Galaxy Tour*/
