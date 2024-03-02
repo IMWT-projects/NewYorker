@@ -11,34 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="java.js"></script>
-<style>
-body {
-	height: 100 vh; 
-	width: 100 vh; 
-}
-.carousel-img {
-            height: 100%;
-            width: 100%;
-        }
-
-.oldimg {
-	clip-path: inset(10% 10% 10% 10% round 20% 20%);
-}
-.fit {
-	height: 100%;
-	width: 100%
-}
-.collapse:not(.show) {
-    display: none;
-}
-
-.collapsing {
-  height: 0;
-  overflow: hidden;
-  /*@include transition($transition-collapse);
-  transition: all 0.3s ease;*/
-}
-</style>
+<link href="css/GalaxyTour.css" rel="stylesheet" type="text/css" />
 		<title>Galaxy Tour</title>
 	</head>
 	<body>
@@ -125,7 +98,7 @@ body {
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>1. Mercury</h5>
 
-                                    <p>Mercury, the closest planet to the Sun, where temperatures swing from hotter 
+                                    <p class="SeeText">Mercury, the closest planet to the Sun, where temperatures swing from hotter 
                                         than a pizza oven during the day to colder than a freezer at night. 
                                         It's like the ultimate test of thermal endurance - 
                                         you'll get a tan and frostbite on the same trip!</p>
@@ -207,14 +180,14 @@ body {
     <div class="card">
         <div class="card-header" id="headingThree">
         <h5 class="mb-0">
-<!--problema con classi-->            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Destinations off the beaten track
             </button>
         </h5>
         </div>
         
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body row">
+        <div class="card-body row" >
             <div class="card col-md-4">
             <div class="card-body alert alert-success mt-3">
             <h5 class="card-title">Off the beaten track</h5>

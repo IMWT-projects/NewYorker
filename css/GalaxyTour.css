@@ -1,0 +1,48 @@
+body {
+    height: 100 vh; 
+    width: 100 vh; 
+}
+.carousel-img {
+            height: 100%;
+            width: 100%;
+        }
+
+.oldimg {
+    clip-path: inset(10% 10% 10% 10% round 20% 20%);
+}
+.fit {
+    height: 100%;
+    width: 100%
+}
+.collapse:not(.show) {
+    display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+}
+
+.navbar {
+    background-color: #13011cf1 !important;
+}
+.carousel-item p {
+background-color: #13011cbe !important;
+border-radius: 4px;
+}
+
+
+.alert-success {
+    color:#240236f1;
+    background-color: #9b58bdbe;
+    border: 0px;
+}
+.carousel-inner img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Imposta l'immagine per coprire il contenitore mantenendo le proporzioni */
+  }
+  #carouselExampleFade {
+    width: 100%; /* Imposta la larghezza del carosello al 100% del contenitore padre */
+  }
+  
