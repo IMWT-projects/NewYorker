@@ -1,20 +1,74 @@
+
+/*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+/*title index animation*/
+@keyframes titleAnimation {
+	0% {
+	  font-weight: 200;
+	  transform: scale(1);
+	}
+	25% {
+	  font-weight: 300
+	  transform: scale(1.1);								
+	}
+	50% {
+	  font-weight: 400;
+	  transform: scale(1.2);
+	} 
+	75% {
+	  font-weight: 300;
+	  transform: scale(1.1);
+	}
+	100% {
+	  font-weight: 400;
+	  transform: scale(1);
+	}
+  }
+  
+  .animate-on-load {
+	animation-name: titleAnimation;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+  }
+
+  /*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*//*/*/
+a {
+	color: #595963ea;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(190, 190, 190, 0.788) !important;
+    text-decoration: underline; /* Aggiunge sottolineatura al passaggio del mouse */
+    cursor: pointer; /* Cambia il cursore del mouse */
+	transition: color 0.5s ease-in-out !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); /*Font for index body*/
+
 body.index {
-	font-family: "Irvin Heading";
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 200;
 	margin: 0;
 	padding: 0;
 	background-color: #f4f4f4;
 }
 
-
 header.index {
 	font-family: "M PLUS Code Latin", monospace;
 	font-size: 3vh;
+	font-weight: 300;
 	background-color: #1bdbbb;
 	color: #fff;
 	padding: 20px 0;
 	text-align: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap') /* Font for the title Web Tech Projects*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap'); /* Font for the title Web Tech Projects*/
+
+#TitleAnimation a:hover {
+	color: #1717175d !important; /* Colore al passaggio del mouse */
+	transition: color 0.7s ease-in-out !important; /* Transizione al cambiamento di colore */ 
+  }
+  
 
 h1.index {
 	margin: 0;
@@ -32,14 +86,24 @@ h1.index {
 	margin-bottom: 20px;
 }
 .project h2 {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 400;
 	margin-top: 0;
 }
 .project p {
 	margin-top: 10px;
 }
+
 .project a {
-	color: black;
-	text-decoration: underline;
+    color: #0f7463; /* Colore dei link */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transizione del colore */
+}
+
+.project a:hover {
+    color: #084e4475; /* Cambia colore al passaggio del mouse */
+    text-decoration: underline; /* Aggiunge sottolineatura al passaggio del mouse */
+    cursor: pointer; /* Cambia il cursore del mouse */
 }
 footer.index {
 	background-color: #1bdbbb;
@@ -50,7 +114,6 @@ footer.index {
 	width: 100%;
 	bottom: 0;
 }
-
 		
 		/* Dropdown container, Index page */
 .dropdown {
@@ -119,7 +182,7 @@ body.articles {
 
 .dropcap::first-letter {
 	float: left;
-    font-size: 3.1em;
+    font-size: 3em;
     margin-bottom: -0.2em;
     padding:0.45em 0.06em 0 0;
 }
@@ -212,7 +275,12 @@ th, td {
 }
 
 
-/* IMPORTED FONTS */
+
+p.SeeText {
+	background-color: red; !important;
+}
+
+/* IMPORTED FONTS FOR ARTICLES */
 
 @font-face {
     font-family: "Titillium Web";
@@ -264,6 +332,3 @@ th, td {
     font-weight: 400;
     src: url("fonts/ChronicleDispCond-Roman.otf") format("opentype");
 }
-
-
-/* Style for Galaxy Tour*/

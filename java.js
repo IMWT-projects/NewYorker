@@ -19,3 +19,26 @@ function verifyDates() {
 
     alert('Dates are valid.');
 }
+
+/* animation for title in index 
+window.onload = function() {
+    var title = document.getElementById("TitleAnimation");
+    title.classList.add("animate-on-load"); */
+
+document.addEventListener("DOMContentLoaded", function() {
+  var TitleAnimation = document.getElementById("TitleAnimation");
+
+  // Animazione al caricamento della pagina
+  TitleAnimation.classList.add("animate-on-load");
+
+  // Animazione al passaggio del cursore
+  TitleAnimation.addEventListener("mouseenter", function() {
+    this.classList.add("animate-on-hover");
+  });
+
+  TitleAnimation.addEventListener("animationend", function() {
+    this.classList.remove("animate-on-hover");
+  });
+});
+
+
