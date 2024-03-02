@@ -7,8 +7,8 @@
 	  transform: scale(1);
 	}
 	25% {
-	  font-weight: 300
-	  transform: scale(1.1);								
+	  font-weight: 300;
+	  transform: scale(1.1);					
 	}
 	50% {
 	  font-weight: 400;
@@ -276,8 +276,8 @@ th, td {
 
 
 
-p.SeeText {
-	background-color: red; !important;
+.SeeText p {
+	background-color: red !important;
 }
 
 /* IMPORTED FONTS FOR ARTICLES */
