@@ -89,21 +89,36 @@ h1.index {
 	font-family: "Josefin Sans", sans-serif;
 	font-weight: 400;
 	margin-top: 0;
+	color: white !important;
 }
 .project p {
 	margin-top: 10px;
 }
+.project a:hover {
+    color: #0b7464a2; /* Cambia colore al passaggio del mouse */
+    text-decoration: underline; /* Aggiunge sottolineatura al passaggio del mouse */
+    cursor: pointer; /* Cambia il cursore del mouse */
+}
+.project span {
+    display: inline-block;
+    padding: 8px 16px; /* adjust padding as needed */
+    background-color: #1bdbbb; /* background color */
+    color: white !important; /* text color */
+    border: none;
+    border-radius: 4px; /* rounded corners */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px; /* adjust font size as needed */
+}
 
+.project span:hover {
+    background-color: #108673; /* color change on hover */
+}
 .project a {
     color: #0f7463; /* Colore dei link */
     text-decoration: none;
     transition: color 0.3s ease; /* Transizione del colore */
-}
-
-.project a:hover {
-    color: #084e4475; /* Cambia colore al passaggio del mouse */
-    text-decoration: underline; /* Aggiunge sottolineatura al passaggio del mouse */
-    cursor: pointer; /* Cambia il cursore del mouse */
 }
 footer.index {
 	background-color: #1bdbbb;
