@@ -142,7 +142,7 @@ footer.index {
 		/* Dropdown container, Index page */
 .dropdown {
 	position: relative;
-	display: inline-block;
+	/*display: inline-block;*/
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	padding: 20px;
@@ -292,9 +292,6 @@ th, td {
 	border-bottom: 1.5px solid rgba(229,229,229,1);
 }
 
-div#OffBeatenTrack {
-	background-color: red;
-}
 
 /* IMPORTED FONTS FOR ARTICLES */
 

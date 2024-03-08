@@ -9,7 +9,7 @@ function checkDate() {
     if (date1==''||date2=='') {
         alert('Attention! None of the dates can be empty. Please enter the dates.');
     }   else if (date1==date2) {
-            alert('Attention! The two dates can\'t be the same. Please change them.');
+            alert('Attention! The two dates must be different.');
     }   else {
             alert('Correct!')
     }
